@@ -1,0 +1,24 @@
+# DS_Store macOS files
+.DS_Store
+*/.DS_Store
+
+#Ignore all hiddden but !.gitignore
+.*
+!.gitignore
+
+
+# Local .terraform directories
+**/.terraform/*
+*/.terraform
+.terraform
+
+#tfvars files
+*.tsvars
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
