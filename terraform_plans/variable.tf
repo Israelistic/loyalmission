@@ -27,3 +27,16 @@ variable "dev_ami_north_pole" {}
 variable "bear_public_key_path" {}
 # Key Pair
 variable "key_name" {}
+#ELB
+variable elb_healthy_threshold {}
+variable elb_unhealthy_threshold {}
+variable elb_timeout {}
+variable elb_interval {}
+# AUTOSCALING
+variable "asg_max" {}
+variable "asg_min" {}
+variable "asg_grace" {}
+variable "asg_hct" {}
+variable "asg_cap" {}
+# Lunch Configuration
+variable "lc_instance_type" {}
