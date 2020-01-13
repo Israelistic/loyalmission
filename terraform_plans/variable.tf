@@ -21,3 +21,9 @@ variable "canada_az" {
 #DNS VAR
 variable "domain_name" {}
 
+#DB VARS
+variable "db_instance_class" {}
+variable "dbname1" {}
+variable "dbname2" {}
+variable "dbuser" {}
+variable "dbpassword" {}

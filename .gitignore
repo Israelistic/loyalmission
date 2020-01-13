@@ -14,7 +14,7 @@
 
 #tfvars files
 *.tsvars
-
+*.tsvars.*
 # .tfstate files
 *.tfstate
 *.tfstate.*
