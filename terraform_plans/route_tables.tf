@@ -1,6 +1,6 @@
 #Creat a Route_Table(TR) && Grant the VPC internet access on its north pole route table
 resource "aws_route_table" "north_pole_rt" {
-  vpc_id   = "${aws_vpc.north_pole_vpc.id}"
+  vpc_id = "${aws_vpc.north_pole_vpc.id}"
   tags = {
     Name = "north_pole_public_RT"
   }
