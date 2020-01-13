@@ -1,5 +1,5 @@
 ######## AUTO SCALING GROUP #####
-esource "aws_autoscaling_group" "north_pole_asg" {
+resource "aws_autoscaling_group" "north_pole_asg" {
   name                      = "asg-${aws_launch_configuration.north_pole_wp_lc.id}"
   max_size                  = "${var.asg_max}"
   min_size                  = "${var.asg_min}"
