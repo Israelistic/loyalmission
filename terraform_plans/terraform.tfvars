@@ -2,7 +2,8 @@
 aws_profile         = "terraform"
 aws_region          = "ca-central-1"
 north_pole_vpc_cidr = "30.0.0.0/16"
-
+local_ip            = "99.228.91.99/32"
+domain_name         = "canadaclouds"
 #Subnet variables
 cidrs_north_pole = {
   public1  = "30.0.1.0/24"
