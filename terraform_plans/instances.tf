@@ -1,6 +1,7 @@
 resource "aws_instance" "north_pole_bear_wp_dev" {
   instance_type = "${var.dev_instance_type}"
   ami           = "${var.dev_ami_north_pole}"
+  associate_public_ip_address = true
   tags = {
     Name = "bear_wp_dev"
   }
@@ -20,6 +21,6 @@ EOF
 EOD
   }
   provisioner "local-exec" {
-    command = "aws ec2 wait instance-status-ok --instance-ids ${aws_instance.north_pole_bear_wp_dev.id} --profile haggai && ansible-playbook -i aws_hosts wordpress.yml"
+    command = "aws ec2 wait instance-status-ok --instance-ids ${aws_instance.north_pole_bear_wp_dev.id} --profile terraform && ansible-playbook -i aws_hosts wordpress.yml"
   }
 }

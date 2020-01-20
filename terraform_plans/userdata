@@ -1,5 +1,5 @@
-      #!/bin/bash
-      /usr/bin/aws s3 sync s3://canadaclouds-41560 /var/www/html/
-      /bin/touch /var/spool/cron/root
-      sudo /bin/echo '*/5 * * * * aws s3 sync s3://canadaclouds-41560 /var/www/html' >> /var/spool/cron/root
-      EOF
+  #!/bin/bash
+  /usr/bin/aws s3 sync s3://canadaclouds-63093 /var/www/html/
+  /bin/touch /var/spool/cron/root
+  sudo /bin/echo '*/5 * * * * aws s3 sync s3://canadaclouds-63093 /var/www/html' >> /var/spool/cron/root
+  EOF

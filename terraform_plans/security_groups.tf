@@ -1,5 +1,5 @@
 ######################Security Groups####################
-# Dev Security Group antartica
+
 # Dev Security Group north pole
 
 resource "aws_security_group" "north_pole_wp_dev_sg" {
@@ -11,21 +11,21 @@ resource "aws_security_group" "north_pole_wp_dev_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["${var.local_ip}"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   #HTTP  access from private ip
   ingress {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    cidr_blocks = ["${var.local_ip}"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   #HTTPS access from private ip
   ingress {
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
-    cidr_blocks = ["${var.local_ip}"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   egress {          #outbound internet access
     from_port   = 0 # all ports
